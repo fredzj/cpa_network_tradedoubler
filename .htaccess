@@ -1,0 +1,6 @@
+# Block web access to config, logs and lock file if this folder ends up inside public_html.
+<FilesMatch "^(config\.php|config\.example\.php|sync\.lock|.*\.log|README\.md)$">
+    Require all denied
+</FilesMatch>
+Options -Indexes
+RedirectMatch 403 ^/?.*/logs/

@@ -1,0 +1,13 @@
+# Credentials
+config.php
+
+# Runtime files
+logs/
+sync.lock
+*.log
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
